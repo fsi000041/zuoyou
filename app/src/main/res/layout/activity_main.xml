@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"></FrameLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/radioGroup"
+        android:background="#efefef" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_work"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/rb_work"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/work_blue"
+            android:gravity="center"
+            android:text="功能"
+            android:textColor="@drawable/work_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/warm_blue"
+            android:gravity="center"
+            android:text="提醒"
+            android:textColor="@drawable/work_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/mine_blue"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/work_color"
+            android:textSize="10sp" />
+    </RadioGroup>
+</RelativeLayout>

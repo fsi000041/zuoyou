@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        style="@style/MyTextGrayThress"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:text="选择货位"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"></ListView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_cancal"
+            android:background="@color/colorGrayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/MyTextBlackFour"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_join"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMain">
+            <TextView
+                android:layout_marginTop="12dp"
+                style="@style/MyText14spWhite"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="52dp"
+                android:text="加入盘点记录" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

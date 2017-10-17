@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_colomn"></include>
+
+    <ListView
+        android:id="@+id/lv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="65dp"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shoping_cart_no_product"/>
+
+        <TextView
+            style="@style/MyTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="购物车里没有商品"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/MyTextWhite"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_bg_down"
+            android:text="去购买"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="合计:￥1080"/>
+
+        <TextView
+            android:id="@+id/tv_quantity_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="106dp"
+            android:text="共(**)件"/>
+
+        <TextView
+            android:id="@+id/tv_settle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorMain"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+</RelativeLayout>

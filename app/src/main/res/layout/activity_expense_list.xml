@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_colomn" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:checkedButton="@+id/rb_doing"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_doing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/redio_btn_seleter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="申请中"
+            android:textColor="@drawable/sales_status_color" />
+
+        <RadioButton
+            android:id="@+id/rb_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/redio_btn_seleter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@drawable/sales_status_color" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayLine" />
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lv_expense"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+</LinearLayout>

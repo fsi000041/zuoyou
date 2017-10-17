@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="17dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/MyTextGrayFour"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext_corners"
+            android:drawableLeft="@drawable/search_gray"
+            android:drawablePadding="9dp"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_cancel" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/MyTextBlue"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MyTextBlackFour"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近搜索"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:layout_marginTop="12dp"
+            android:id="@+id/tfl_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            zhy:max_select="-1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></ListView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivsearch"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search_no_pro" />
+
+        <TextView
+            style="@style/MyTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivsearch"
+            android:layout_centerHorizontal="true"
+            android:text="没搜索到,换个关键词试试" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

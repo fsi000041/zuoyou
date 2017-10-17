@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/rl">
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextBlack"
+        android:text="2016.10.22 盘点记录"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/MyTextGray15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="31dp"
+        android:text="盘点单号：932821678361278" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/row_right" />
+</RelativeLayout>

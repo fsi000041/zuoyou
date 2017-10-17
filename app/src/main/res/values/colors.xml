@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--主题色-->
+    <color name="colorMain">#2E89FF</color>
+    <!--次主题色-->
+    <color name="colorSecond">#2E89FF</color>
+    <!--成功色-->
+    <color name="colorSuccess">#7DD121</color>
+    <!--警告色-->
+    <color name="colorWarning">#F7E61C</color>
+    <!--失败色-->
+    <color name="colorFail">#FD3E23</color>
+    <color name="colorRed">#FD3E23</color>
+    <!--黑色-->
+    <color name="colorBlack">#000000</color>
+    <!--灰色-->
+    <color name="colorGray">#999999</color>
+    <!--中灰（线条）-->
+    <color name="colorGrayLine">#DDDDDD</color>
+    <!--中灰（按钮）-->
+    <color name="colorGrayBtn">#EFEFEF</color>
+    <!--背景灰-->
+    <color name="colorGrayBg">#FAFAFA</color>
+
+    <!--深蓝色-->
+    <color name="blueNavy">#5382EF</color>
+    <!--浅蓝色-->
+    <color name="blueWathet">#8BE9FF</color>
+    <!--白色-->
+    <color name="buleGray">#FFA6CCFF</color>
+    <!--白色-->
+    <color name="colorWhite">#FFFFFF</color>
+    //用在searchView上的，名字再确定
+    <color name="salejh_search_hint">#acacac</color>
+
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <!--底部弹出框-->
+
+    <color name="transparent">#00000000</color>
+    <color name="black_444444">#444444</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_888888">#888888</color>
+    <color name="text_color_green_013ADF">#013ADF</color>
+    <color name="blue_6eb">#6eb0f3</color>
+    <color name="gray_aaa">#aaaaaa</color>
+    <color name="gray_eee">#EEEEEE</color>
+    <color name="blue_afe">#2E9AFE</color>
+    <color name="pink_ece">#F6CECE</color>
+    <color name="red_111">#FF1111</color>
+    <color name="main_color">#CAE1FF</color>
+    <color name="holder_normal">#E84A40</color>
+    <color name="holder_pressed">#E22F2F</color>
+</resources>

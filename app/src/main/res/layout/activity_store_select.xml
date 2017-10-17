@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.bigzone.zuoyou.billing.activity.StoreSelectActivity">
+
+    <include
+        layout="@layout/top_colomn"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/colorGrayBg"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_unload"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_store"
+            style="@style/MyTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="默认门店"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorGrayLine"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/row_right"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+</LinearLayout>

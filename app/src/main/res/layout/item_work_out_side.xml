@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants"  >
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/MyTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        android:text="XXXXXX" />
+
+
+
+    <TextView
+        android:id="@+id/things"
+        style="@style/MyTextGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="31dp"
+        android:text="XXXXXXXXXXXXX" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/MyTextGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="53dp"
+        android:text="XXXXXX"
+       />
+    
+    <Button
+        android:id="@+id/bt_sign"
+        style="@style/MyTextWhite"
+        android:background="@drawable/sales_btn_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:text="签到"
+        android:textColor="@color/colorWhite"
+        android:focusable="false"
+        />
+</RelativeLayout>

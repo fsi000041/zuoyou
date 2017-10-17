@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/state"
+        style="@style/MyTextWhite"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="XXXXX"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/MyTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/state"
+        android:text="XXXXXX" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/MyTextGrayThress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="xxxxxxxxxxxxxxxxxx" />
+
+    <TextView
+        android:id="@+id/man"
+        style="@style/MyTextGrayThress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/state"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="xxxxxxxxxxxxxxxxxx" />
+</RelativeLayout>

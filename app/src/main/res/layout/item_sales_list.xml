@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="52dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/sales_tv_bg_yellow"
+            android:gravity="center"
+            android:text="待审核" />
+
+
+        <TextView
+            android:id="@+id/num"
+            style="@style/MyTextGrayFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_status"
+            android:text="5HTW200312632545" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/MyTextGrayFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="2016-10-12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrayLine" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/no_product" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/MyTextBlackFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="AP-555 (1+1+3) 布套沙发 卡其色亚麻色粉红色翡翠色布套" />
+
+        <TextView
+            android:id="@+id/count"
+            style="@style/MyTextBlackFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="共X件商品" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/should"
+            style="@style/MyTextBlackFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="应收: ¥590.00" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGrayLine" />
+
+        <TextView
+            android:id="@+id/paid"
+            style="@style/MyTextBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已收: ¥590.00"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/no_address" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/MyTextGrayFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_toLeftOf="@+id/iv_call"
+            android:text="某某，上海市闵行区集心路168号煤省商务区5号楼301室，13737375849，☏" />
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/telephone_blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrayLine" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/btn_left"
+            style="@style/MyTextBlackFour"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_mid"
+            android:background="@drawable/sales_btn_left"
+            android:focusable="false"
+            android:text="删除"
+            android:textColor="@color/colorRed"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_mid"
+            style="@style/MyTextBlackFour"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_right"
+            android:background="@drawable/sales_btn_mid"
+            android:focusable="false"
+            android:text="审核"
+            android:textColor="@color/colorMain"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/MyTextWhite"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sales_btn_right"
+            android:focusable="false"
+            android:text="修改"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

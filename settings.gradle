@@ -1,0 +1,4 @@
+include ':app', ':zxinglite'
+
+include ':moveToDelete'
+include ':customerViewGroup'

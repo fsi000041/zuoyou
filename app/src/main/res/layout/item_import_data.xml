@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:background="@color/colorWhite"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/num"
+            style="@style/MyTextBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="来源单号：21832908493849" />
+
+        <TextView
+            android:id="@+id/info"
+            style="@style/MyTextGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:text="来源单号：21832908493849" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/MyTextGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:text="来源单号：21832908493849" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/MyTextGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:text="来源单号：21832908493849" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/isImport"
+        style="@style/MyTextWhite"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:button="@null"
+        android:focusable="false"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/row_right" />
+
+</RelativeLayout>

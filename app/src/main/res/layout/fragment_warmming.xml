@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/colorGrayLine" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_examine"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+        <RadioButton
+            android:id="@+id/rb_examine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/redio_btn_seleter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未完成"
+            android:textColor="@drawable/sales_status_color" />
+
+        <RadioButton
+            android:id="@+id/rb_paying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/redio_btn_seleter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="今日"
+            android:textColor="@drawable/sales_status_color" />
+
+        <RadioButton
+            android:id="@+id/rb_paid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/redio_btn_seleter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@drawable/sales_status_color" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayLine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrayLine" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bigzone.zuoyou.billing.activity.SalesOrderActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.bigzone.zuoyou.billing.activity.SalesOrderActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <include layout="@layout/top_colomn" />
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_mendian"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/MyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="门店" />
+
+            <TextView
+                android:id="@+id/tv_select"
+                style="@style/MyTextGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="11dp"
+                android:text="请选择" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/row_right" />
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25.5dp"
+            android:background="@color/colorGrayBg">
+
+            <TextView
+                style="@style/MyTextGrayThress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="筛选商品 (可选择填写多个筛选条件,或不填)" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_kuanshi"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/MyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="款式" />
+
+            <TextView
+                android:id="@+id/tv_select1"
+                style="@style/MyTextGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="11dp"
+                android:text="请选择" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/row_right" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayLine"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_fenlei"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/MyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="分类" />
+
+            <TextView
+                android:id="@+id/tv_select2"
+                style="@style/MyTextGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="11dp"
+                android:text="请选择" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/row_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayLine"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_fenbu"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/MyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="皮布属性" />
+
+            <TextView
+                android:id="@+id/tv_select3"
+                style="@style/MyTextGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="11dp"
+                android:text="请选择" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/row_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25.5dp"
+            android:background="@color/colorGrayBg">
+
+            <TextView
+                style="@style/MyTextGrayThress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="关键词 (可输入品牌,系列,商品,商品的编码或名称)" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_guanjian"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/MyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="关键词" />
+
+            <TextView
+                android:id="@+id/tv_select4"
+                style="@style/MyTextGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="11dp"
+                android:hint="请输入" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/row_right" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/rl_sumbit_leave"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="@color/colorWhite"
+        android:text="提交" />
+</RelativeLayout>

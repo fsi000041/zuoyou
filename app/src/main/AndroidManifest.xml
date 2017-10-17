@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bigzone.zuoyou">
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 下载权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 音量 -->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".common.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StartActivity" />
+
+        <!-- 登录界面 -->
+        <activity android:name=".login.activity.LoginActivity" />
+        <!-- 主界面 -->
+        <activity android:name=".main.activity.MainActvity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 关于界面 -->
+        <activity android:name=".main.activity.AboutActivity" />
+        <!-- 开单地址详情 -->
+        <activity android:name=".billing.activity.AddressAddActivity" />
+        <!-- 开单地址列表 -->
+        <activity android:name=".billing.activity.AddressSelectActivity" />
+        <!-- 开单主界面 -->
+        <activity android:name=".billing.activity.BillingMainActivity" />
+        <!-- 扫码 -->
+        <activity android:name=".billing.activity.CodeScanActivity" />
+        <!-- 费用结算 -->
+        <activity android:name=".billing.activity.FeeSettleActivity" />
+        <!-- 商品详情 -->
+        <activity android:name=".billing.activity.ProductDetailActivity" />
+        <!-- 商品列表 -->
+        <activity android:name=".billing.activity.ProductListActivity" />
+
+        <!-- 搜索商品 -->
+        <activity android:name=".billing.activity.SearchProductActivity" />
+
+        <!-- 结算 -->
+        <activity
+            android:name=".billing.activity.SettleActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 购物车 -->
+        <activity android:name=".billing.activity.ShoppingCartActivity" />
+
+        <!-- 选择商品列表 -->
+        <activity android:name=".billing.activity.StoreSelectActivity" />
+
+        <!-- 沙发参数编辑 -->
+        <activity android:name=".billing.activity.EditParaActivity" />
+        <!-- 订单列表 -->
+        <activity android:name=".sales.activity.SalesListActivity" />
+        <!-- 交款界面 -->
+        <activity android:name=".sales.activity.PayMoneyActivity" />
+        <!-- 订单详情 -->
+        <activity android:name=".sales.activity.SalesDetailActivity" />
+        <!-- 订单搜索界面 -->
+        <activity android:name=".sales.activity.SalesSearchListActivity" />
+        <!-- 变更订单 -->
+        <activity android:name=".sales.activity.ChangeAddressActivity" />
+        <!-- 修改订单 -->
+        <activity android:name=".sales.activity.ChangeDetailActivity" />
+        <!-- 接待 -->
+        <activity android:name=".reception.activity.ReceptionMainActivity" />
+
+        <service android:name=".reception.service.RecordService">
+            <intent-filter>
+                <action android:name="com.test.SERVICE_TEST" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".reception.activity.ReceptionDetailActivity" />
+        <!-- 关联潜客 -->
+        <activity android:name=".reception.activity.LinkListActivity" />
+        <activity android:name=".reception.activity.LinkDetailActivity" />
+        <!-- 潜客管理列表 -->
+        <activity android:name=".potential.activity.PotentialListActivity" />
+        <activity android:name=".potential.activity.PotentialDetailActivity" />
+        <!-- 接待记录列表 -->
+        <activity android:name=".potential.activity.RecordsListActivity" />
+        <activity android:name=".potential.activity.RecordsDetailActivity" />
+        <!-- 欲购清单 -->
+        <activity android:name=".potential.activity.WishListActivity" />
+        <!-- 提醒 -->
+        <activity android:name=".potential.activity.RemindListActivity" />
+        <activity android:name=".potential.activity.RemindDetailActivity" />
+        <!-- 住宅信息 -->
+        <activity android:name=".potential.activity.HouseDetailActivity" />
+        <activity android:name=".potential.activity.HouseListActivity" />
+        <!-- 维系结果列表 -->
+        <activity android:name=".potential.activity.MaintainListActivity" />
+        <activity android:name=".potential.activity.MaintainDetailActivity" />
+        <!-- 打卡 -->
+        <activity android:name=".clock.activity.ClockMainActivity" />
+        <activity android:name=".clock.activity.ClockDetailActivity" />
+        <activity android:name=".clock.activity.ClockRecordListActivity" />
+        <!-- 潜客基本信息 -->
+        <activity android:name=".potential.activity.BasicInfoActivity" />
+        <!-- 潜客联系方式 -->
+        <activity android:name=".potential.activity.ContactInfoActivity" />
+
+        <!-- 接待进度 -->
+        <activity android:name=".potential.activity.ScheduleActivity" />
+
+        <!-- 请假单详情 -->
+        <activity android:name=".main.activity.LeaveDetailActivity" />
+        <!-- 提醒详情 -->
+        <activity android:name=".main.activity.WarmDetailActivity" />
+        <!-- 报销列表 -->
+        <activity android:name=".expense.activity.ExpenseListActivity" />
+        <activity android:name=".expense.activity.ExpenseDetailActivity" />
+        <activity android:name=".expense.activity.ExpenseAddActivity" />
+        <activity android:name=".expense.activity.CostItemActivity" />
+        <!-- 借款列表 -->
+        <activity android:name=".loan.activity.LoanAddActivity" />
+        <activity android:name=".loan.activity.LoanDetailActivity" />
+        <activity android:name=".loan.activity.LoanListActivity" />
+        <!-- 审批列表 -->
+        <activity android:name=".examine.activity.ExamineListActivity" />
+        <activity android:name=".examine.activity.ExamineAddActivity" />
+        <activity android:name=".examine.activity.ExamineDetailActivity" />
+        <!-- 公告 -->
+        <activity android:name=".main.activity.NoticeActivity" />
+
+        <!-- 考勤 -->
+        <activity android:name=".Attendance.Activity.AttendanceListActivity" />
+        <!-- 考勤请假 -->
+        <activity android:name=".Attendance.Activity.AskForLeaveActivity" />
+        <!-- 请假申请 -->
+        <activity android:name=".Attendance.Activity.LeaveRequest" />
+        <!-- 考勤加班 -->
+        <activity android:name=".Attendance.Activity.WorkOverTimeActivity" />
+        <!-- 考勤外勤 -->
+        <activity android:name=".Attendance.Activity.OutsideActivity" />
+        <!-- 审批流程 -->
+        <activity android:name=".Attendance.Activity.ApprovalProcessActivity" />
+        <!-- 审批人 -->
+        <activity android:name=".Attendance.Activity.ApprovalPickerActivity" />
+        <!-- 外勤申请 -->
+        <activity
+            android:name=".Attendance.Activity.ApplyForOutSideActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 外勤详情 -->
+        <activity android:name=".Attendance.Activity.OutsideDetailsActivity" />
+
+        <!-- 请假详情 -->
+        <activity android:name=".Attendance.Activity.LeaveDetalActivity" />
+
+        <!-- 考勤签到 -->
+        <activity android:name=".Attendance.Activity.ClockSignctivity" />
+        <!-- 加班新增 -->
+        <activity android:name=".Attendance.Activity.WorkOverTimeAddActivity" />
+        <!-- 盘点 -->
+        <activity android:name=".stocktaking.activity.AtocktakingActivity" />
+        <activity android:name=".stocktaking.activity.PhotoActivity" />
+        <activity android:name=".stocktaking.activity.NewStocktakingActivity" />
+        <activity android:name=".stocktaking.activity.AtocktakingRecordDetailActivity" />
+        <activity android:name=".stocktaking.activity.AtocktakingRecordActivity" />
+        <activity android:name=".stocktaking.activity.SweepCodePhotoActivity" />
+        <!-- 排车 -->
+        <activity android:name=".arrange.activity.ArrangeListActivity" />
+        <activity android:name=".arrange.activity.ArrangeAddActivity" />
+        <activity android:name=".arrange.activity.ArrangeDetailActivity" />
+        <activity android:name=".arrange.activity.DeliverGoodsActivity" />
+        <activity android:name=".arrange.activity.BillDetailActivity" />
+        <activity android:name=".arrange.activity.GoodsDetailActivity" />
+        <activity android:name=".arrange.activity.PlatoonOrderActivity"/>
+        <activity android:name=".arrange.activity.PlatoonBillingActivity"/>
+
+        <!--销售开单v2-->
+        <activity android:name=".billing.activity.SalesOrderActivity" />
+        <activity android:name=".billing.activity.SelectStoresActivity" />
+        <activity android:name=".billing.activity.SalesSearchNullActivity" />
+        <activity android:name=".billing.activity.KeyWordActivity" />
+        <activity android:name=".billing.activity.ShopCarActivity"/>
+        <activity android:name=".billing.activity.ScanActivity"/>
+        <activity android:name=".billing.activity.SalesSuccessActivity"/>
+        <activity android:name=".billing.activity.ClassificationActivity"/>
+        <activity android:name=".billing.activity.FabriNameActivity"/>
+     <!--<activity android:name=".billing.activity.WorkCaptureActivity"/>-->
+
+        <!--方案展示-->
+        <activity android:name=".programme.activity.ProgrammeListActivity" />
+        <!--签收-->
+        <activity android:name=".sign.activity.SignListActivity" />
+        <activity android:name=".sign.activity.SignDetailActivity" />
+        <activity android:name=".sign.activity.DrawNameActivity" />
+        <activity android:name=".sign.activity.SignPhotoActivity" />
+
+        <!--货物查询-->
+        <activity android:name=".goodsearch.activity.GoodsSearchActivity"/>
+        <!--品牌查询-->
+        <activity android:name=".BrandSearch.activity.BrandSearcheActivity"/>
+        <!--品类查询-->
+        <activity android:name=".category.activity.CategorySearchActivity"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jnl57fEUURdHFT33Y74vjgbdeqFTLhUm" />
+
+        <activity android:name=".Attendance.Activity.WorkOverTimeDetilActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.bigzone.zuoyou.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

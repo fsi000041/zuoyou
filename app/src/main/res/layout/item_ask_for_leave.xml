@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/MyTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        android:text="XXXXXX" />
+
+
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/MyTextGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="31dp"
+        android:text="XXXXXXXXXXXXX" />
+
+    <TextView
+        android:id="@+id/state"
+        style="@style/MyTextGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="31dp"
+        android:text="XXXXXX" />
+</RelativeLayout>

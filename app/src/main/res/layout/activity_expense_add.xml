@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/top_colomn" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/sales_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_statue"
+                        style="@style/MyTextBlackFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="报销状态:审批中" />
+
+                    <TextView
+                        android:id="@+id/tv_billdate"
+                        style="@style/MyTextGrayFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="日期:2017-10-01" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/sales_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MyTextGrayFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="订单号:CTD34235D43F" />
+
+                    <TextView
+                        style="@style/MyTextGrayFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="日期:2017-10-01" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextGrayThress"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="费用" />
+
+            <ListView
+                android:id="@+id/lv_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <RelativeLayout
+                android:id="@+id/rl_add"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="@color/colorWhite">
+
+                <View
+                    android:id="@+id/line"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGrayLine"/>
+                <TextView
+                    style="@style/MyTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="添加费用" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/row_right" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextGrayThress"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="附件" />
+
+            <ListView
+                android:id="@+id/lv_annex"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"></ListView>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/MyTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorMain"
+            android:text="提交" />
+    </RelativeLayout>
+</ScrollView>
